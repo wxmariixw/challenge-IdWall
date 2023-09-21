@@ -9,13 +9,20 @@ Na primeria parte do projeto nós criamos um sistema privado das duas organizaç
 ### 2º parte
 Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas duas insitituições, alimente o banco de dados e desenvolver o back-end da aplicação idealizada, utilizando técnicas aprendidas durante o curso e criando um sistema funcional.
 
-## Ferramentas utilizadas
+---
+## Linguagens e ferramentas utilizadas
 
+---
 ## Como utilizar a aplicação
 
+---
 ## Desenvolvedores
-[André Morais]()
-[Eduardo Nunes]()
-[Juan Marco Camacho]()
+[André Luz](https://github.com/andreluz)
+
+[Eduardo Nunes](https://github.com/edununes22)
+
+[Juan Marco Camacho](https://github.com/juanmqc22)
+
 [Mariana Abreu](https://github.com/wxmariixw)
-[Miguel Marcondes]()
+
+[Miguel Marcondes](https://github.com/miguelmarcondes)

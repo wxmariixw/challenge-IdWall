@@ -10,6 +10,22 @@ Na primeria parte do projeto nós criamos um sistema privado das duas organizaç
 Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas duas insitituições, alimente o banco de dados e desenvolver o back-end da aplicação idealizada, utilizando técnicas aprendidas durante o curso e criando um sistema funcional.
 
 ---
+## To-do
+- [ ] Documentação detalhada
+  - [ ] Descrever técnicas que foram utilizadas para realizar a coleta de dados com o crawler
+  - [ ] Bibliotecas que foram utilizadas
+  - [ ] Descrever desafios a serem encarados 
+
+- [ ] Implementação
+  - [ ] Codigo fonte
+    - [ ] Crawler
+    - [ ] Ingestão no banco de dados
+    - [ ] Back-end da aplicação
+
+- [ ] Apresentação
+  - [ ] Video demonstrando a API ativa
+
+---
 ## Linguagens e ferramentas utilizadas
 
 ---

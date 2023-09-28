@@ -1,22 +1,29 @@
 # Challenge IdWall
 
 ## Desafio
+
 Esse ano fomos desafiados pela IdWall para criarmos uma aplicação web que ajudasse a combater a lavagem de dinheiro e o financiamento de práticas terroristas, gerenciando as duas listas de pessoas procuradas da Interpol e do FBI.
 
 ### 1º parte
+
 Na primeria parte do projeto nós criamos um sistema privado das duas organizações e filiadas, realizando um login criado a partir de um usuário administrador, onde será possível realizar uma busca por nome e contendo filtros por idade, crime, local de nascimento, local do crime e insituição registrado. Também será disponibilizado um dashboard contendo gráficos de comparação de estatísticas.
 
 ### 2º parte
+
 Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas duas insitituições, alimente o banco de dados e desenvolver o back-end da aplicação idealizada, utilizando técnicas aprendidas durante o curso e criando um sistema funcional.
 
 ---
+
 ## To-do
+
 - [ ] Documentação detalhada
+
   - [ ] Descrever técnicas que foram utilizadas para realizar a coleta de dados com o crawler
   - [ ] Bibliotecas que foram utilizadas
-  - [ ] Descrever desafios a serem encarados 
+  - [ ] Descrever desafios a serem encarados
 
 - [ ] Implementação
+
   - [ ] Codigo fonte
     - [ ] Crawler
     - [ ] Ingestão no banco de dados
@@ -25,14 +32,63 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 - [ ] Apresentação
   - [ ] Video demonstrando a API ativa
 
----
 ## Linguagens e ferramentas utilizadas
 
----
+- Python
+- Flask
+- PostgreSQL
+
 ## Como utilizar a aplicação
 
----
+### Preparando o ambiente virutal
+
+<details>
+  <summary>Windows</summary>
+  <ol>
+    <li>
+      <p>Crie o ambiente vitual</p>
+      <code style="white-space:nowrap;">python3 -m venv venv</code>
+    </li>
+    <li>
+      <p>Ative o ambiente virtual</p>
+      <code style="white-space:nowrap;">venv\Scripts\activate.bat</code>
+    </li>
+  </ol>
+</details>
+
+<details>
+  <summary>Linux</summary>
+  <ol>
+    <li>
+      <p>Crie o ambiente vitual</p>
+      <code style="white-space:nowrap;">virtualenv venv</code>
+    </li>
+    <li>
+      <p>Ative o ambiente virtual</p>
+      <code style="white-space:nowrap;">cd venv</code>
+      <p></p>
+      <code style="white-space:nowrap;">source bin/activate</code>
+    </li>
+  </ol>
+</details>
+
+**Instale os requisitos**
+  ```
+  pip install -r requirements.txt
+  ```
+**Caso realize alguma alteração sempre anote no requirements**
+  ```
+  pip freeze > requirements.txt
+  ```
+
+### Rodando o app
+- Para rodar o app, rode o seguinte comando no terminal
+```
+uvicorn main:app --reload
+```
+
 ## Desenvolvedores
+
 [André Luz](https://github.com/andreluz)
 
 [Eduardo Nunes](https://github.com/edununes22)

@@ -16,17 +16,15 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 
 ## To-do
 
-- [ ] Documentação detalhada
-
-  - [ ] Descrever técnicas que foram utilizadas para realizar a coleta de dados com o crawler
-  - [ ] Bibliotecas que foram utilizadas
-  - [ ] Descrever desafios a serem encarados
+- [x] Documentação detalhada
+  - [x] Descrever técnicas que foram utilizadas para realizar a coleta de dados com o crawler
+  - [x] Bibliotecas que foram utilizadas
+  - [x] Descrever desafios a serem encarados
 
 - [ ] Implementação
-
   - [ ] Codigo fonte
-    - [ ] Crawler
-    - [ ] Ingestão no banco de dados
+    - [X] Crawler
+    - [X] Ingestão no banco de dados
     - [ ] Back-end da aplicação
 
 - [ ] Apresentação
@@ -34,8 +32,21 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 
 ## Linguagens e ferramentas utilizadas
 
+### Linguagem
 - Python
-- Flask
+
+### Framework
+- FastAPI
+
+### Bibliotecas
+- Pandas
+- Request
+- SQLalchemy
+- typing
+- datetime
+- pydantic
+
+### Banco de dados
 - PostgreSQL
 
 ## Como utilizar a aplicação
@@ -98,3 +109,7 @@ uvicorn main:app --reload
 [Mariana Abreu](https://github.com/wxmariixw)
 
 [Miguel Marcondes](https://github.com/miguelmarcondes)
+
+## Link para este repositório
+[Repositório Git](https://github.com/wxmariixw/challenge-IdWall)
+

@@ -2,7 +2,7 @@ from fastapi import status
 from fastapi import APIRouter
 from typing import List
 from app.settings.settings import SessionLocal
-from app.domain.wanted_entity import WantedModel
+from app.domain.wanted_entity import WantedEntity
 from app.router.schema.wanted_schema import Wanted
 
 router = APIRouter(redirect_slashes=False)
@@ -15,6 +15,6 @@ router = APIRouter(redirect_slashes=False)
 
 def get_wanted():
     db = SessionLocal()
-    procurados = db.query(WantedModel).all()
+    procurados = db.query(WantedEntity).all()
     db.close()
     return procurados

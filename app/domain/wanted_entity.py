@@ -2,6 +2,7 @@ import datetime
 from sqlalchemy import Column, Numeric, Text
 from app.settings.settings import Base
 
+
 class WantedEntity(Base):
     __tablename__ = "procurado"
 
@@ -10,12 +11,12 @@ class WantedEntity(Base):
     data_de_nascimento: datetime = Column(Text, nullable=True)
     cor_cabelo: str = Column(Text, nullable=True)
     cor_olhos: str = Column(Text, nullable=True)
-    procurado_peso: float = Column(Text, nullable=True)
+    procurado_peso: str = Column(Text, nullable=True)
     procurado_altura: float = Column(Numeric, nullable=True)
     procurado_profissao: str = Column(Text, nullable=True)
     marcas_cicatrizes: str = Column(Text, nullable=True)
     procurado_ncic: int = Column(Text, nullable=True)
-    recompensa: str = Column(Text, nullable=True)
+    recompensa: float = Column(Numeric, nullable=True)
     aviso: str = Column(Text, nullable=True)
     local_nascimento: str = Column(Text, nullable=True)
     nacionalidade: int = Column(Text, nullable=True)

@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 
-def run_crawler_fbi(tabela, conexao, schema):
 
-    page = [1, 2, 3, 4, 5] ## pega apenas as 5 primeiras páginas
+def run_crawler_fbi(tabela, conexao, schema):
+    page = [1, 2, 3, 4, 5]  ## pega apenas as 5 primeiras páginas
 
     for pagina in page:
         url = f"https://api.fbi.gov/@wanted?pageSize=20&page={pagina}&sort_on=modified&sort_order=desc"
@@ -29,7 +29,7 @@ def run_crawler_fbi(tabela, conexao, schema):
                 "local_nascimento": criminoso["place_of_birth"],
                 "nacionalidade": criminoso["nationality"],
                 "sexo": criminoso["sex"],
-                "raca": criminoso["race"]
+                "raca": criminoso["race"],
             }
 
             lista_criminosos.append(entrada_criminoso)
@@ -37,11 +37,12 @@ def run_crawler_fbi(tabela, conexao, schema):
     dataframe_criminosos = pd.DataFrame(lista_criminosos)
     dataframe_criminosos.to_sql(tabela, conexao, schema)
 
+
 # Nome da tabela
 tabela = "procurado"
 # Nome do schema
 schema = "public"
 # Dados de conexão: exemplo: postgresql://myuser:mypassword@localhost:5432/mydatabas`
-conexao = "postgresql://postgres:postgres@localhost:5432/idwall" 
+conexao = "postgresql://postgres:postgres@localhost:5432/idwall"
 
 run_crawler_fbi(tabela, conexao, schema)

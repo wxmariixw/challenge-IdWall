@@ -17,28 +17,33 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 ## To-do
 
 - [x] Documentação detalhada
+
   - [x] Descrever técnicas que foram utilizadas para realizar a coleta de dados com o crawler
   - [x] Bibliotecas que foram utilizadas
   - [x] Descrever desafios a serem encarados
 
-- [ ] Implementação
-  - [ ] Codigo fonte
-    - [X] Crawler
-    - [X] Ingestão no banco de dados
-    - [ ] Back-end da aplicação
+- [x] Implementação
 
-- [ ] Apresentação
-  - [ ] Video demonstrando a API ativa
+  - [x] Codigo fonte
+    - [x] Crawler
+    - [x] Ingestão no banco de dados
+    - [x] Back-end da aplicação
+
+- [x] Apresentação
+  - [x] Video demonstrando a API ativa
 
 ## Linguagens e ferramentas utilizadas
 
 ### Linguagem
+
 - Python
 
 ### Framework
+
 - FastAPI
 
 ### Bibliotecas
+
 - Pandas
 - Request
 - SQLalchemy
@@ -47,6 +52,7 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 - pydantic
 
 ### Banco de dados
+
 - PostgreSQL
 
 ## Como utilizar a aplicação
@@ -84,19 +90,28 @@ Agora na segunda parte nos foi proposto criar um crawler que colete os dados nas
 </details>
 
 **Instale os requisitos**
-  ```
-  pip install -r requirements.txt
-  ```
+
+```
+pip install -r requirements.txt
+```
+
 **Caso realize alguma alteração sempre anote no requirements**
-  ```
-  pip freeze > requirements.txt
-  ```
+
+```
+pip freeze > requirements.txt
+```
 
 ### Rodando o app
+
 - Para rodar o app, rode o seguinte comando no terminal
+
 ```
 uvicorn main:app --reload
 ```
+
+### Documentação
+
+Para acessar a documentação das rotas, basta dicionar a rota `/docs`
 
 ## Desenvolvedores
 
@@ -111,5 +126,5 @@ uvicorn main:app --reload
 [Miguel Marcondes](https://github.com/miguelmarcondes)
 
 ## Link para este repositório
-[Repositório Git](https://github.com/wxmariixw/challenge-IdWall)
 
+[Repositório Git](https://github.com/wxmariixw/challenge-IdWall)

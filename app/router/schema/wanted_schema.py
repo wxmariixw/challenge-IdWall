@@ -4,9 +4,8 @@ from pydantic import BaseModel, Field
 
 class Wanted(BaseModel):
     procurado_id: int = Field(..., title="ID")
-    procurado_nome: Optional[str] = Field(..., title="Nome")
     procurado_apelido: Optional[str] = Field(..., title="Apelido e outros nomes")
-    data_nascimento: Optional[datetime] = Field(..., title="Data de nascimento")
+    data_de_nascimento: Optional[datetime] = Field(..., title="Data de nascimento")
     local_nascimento: Optional[str] = Field(..., title="Local de nascimento")
     nacionalidade: Optional[str] = Field(..., title="Nacionalidade")
     cor_cabelo: Optional[str] = Field(..., title="Cor do cabelo")
@@ -18,6 +17,5 @@ class Wanted(BaseModel):
     procurado_profissao: Optional[str] = Field(..., title="Profissão")
     marcas_cicatrizes: Optional[str] = Field(..., title="Marcas, cicatrizes e tatuagens")
     procurado_ncic: Optional[int] = Field(..., title="NCIC")
-    comentario: Optional[str] = Field(..., title="Comentários")
     aviso: Optional[str] = Field(..., title="Avisos")
     recompensa: Optional[str] = Field(..., title="Recompensa")
